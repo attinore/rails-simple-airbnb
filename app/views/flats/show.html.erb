@@ -1,0 +1,37 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @flat.picture_url %>);">
+  <div class="container d-flex">
+    <div class="flat_info_main col-md-8">
+      <div class="grey_box mb-3">
+        <h1><%= @flat.name  %></h1>
+        <p><%= @flat.address %></p>
+      </div>
+
+      <div class="grey_box mb-3">
+        <h2>A bit more about this flat...</h2>
+        <p><%= @flat.description %></p>
+      </div>
+
+      <div class="grey_box mb-3">
+        <h2>Guests & Price</h2>
+          <div>
+            <p># of guests<%= @flat.number_of_guests %></p>
+            <p>Price per night <%= @flat.price_per_night %></p>
+          </div>
+      </div>
+
+      <%= link_to 'Go back to the list', flats_path %>
+    </div>
+
+
+    <div class="flat_info_action col-md-4">
+      <div class="grey_box mb-3">
+        <p>form</p>
+      </div>
+
+      <div class="grey_box">
+        <p>Share</p>
+      </div>
+    </div>
+  </div>
+</div>
+
